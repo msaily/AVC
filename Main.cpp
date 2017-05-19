@@ -38,13 +38,11 @@ int main(){
     int backSpeed = -127;
   
     // Implementing PID
-    
     float dAdjustment = 0.5;
-    float iAdjustment = 0.5;
     float pAdjustment = 0.5;
     double errorTotal = 0;
     
-    double differential, integral, proportional = 0;
+    double differential, proportional = 0;
     
     while(true){
         signal = read_camera();
@@ -53,8 +51,6 @@ int main(){
             set_motor(0, driveLeft);//Left motor - depending on wiring
             set_motor(1, driveRight); // Right motor - depending on wiring
             sleep(0, 1000000);
-            
-            
         }
         else if (singal > 0){
             set_motor(1, driveRight);
@@ -64,16 +60,14 @@ int main(){
             driveLeft = -127;
             driveRight = -127;
             set_motor(1, backSpeed);
-            set_motor(0, backSpeed)
+            set_motor(0, backSpeed);
             //set_motor(0, driveLeft);
         }
         else {
             set_motor(0, driveRight);
         }
     }
-
     return 0;
-
 }
 
 
