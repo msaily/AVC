@@ -2,31 +2,30 @@
 //  Main.cpp
 //  
 //
-//  Created by Michael Saily on 18/05/17.
+//  Created by Michael Saily only 18/05/17.
 //
 //
-
 #include <stdio.h>
 #include <time.h>
+#include "E101.h"
+
 // If the sum is equal to 999 - then its on the black 
 int read_camera(){
-    double col = 0;
     double row = 120;
-    take_picture();
     int sum, s = 0;
     double signal = 0;
-    int white = 0;
     int numWhitePixels = 0;
     
+    take_picture();
     for(int i = 0; i < 320; i++){
-        s = (get_pixel(col, i, 3) > 127) ? 1:0;
+        s = (get_pixel(row, i, 3) > 127) ? 1:0;
         numWhitePixels = (s==1) ? numWhitePixels++:numWhitePixels;
-        sum = sum + (i-160)*s;
+        sum += (i-160)*s;
         if(numWhitePixels > 0){ sum/numWhitePixels; }
         else { sum = 999; }
     }
-    
     signal = sum;
+    UI.printf("Error: %d \n", signal);
     return signal;
 }
 
