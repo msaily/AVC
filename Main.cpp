@@ -52,7 +52,7 @@ int main(){
             set_motor(1, driveRight); // Right motor - depending on wiring
             sleep(0, 1000000);
         }
-        else if (singal > 0){
+        else if (signal > 0){
             set_motor(1, driveRight);
             //set_motor(0, driveLeft);
         }
