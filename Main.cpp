@@ -56,7 +56,7 @@ int main(){
             set_motor(1, driveRight);
             //set_motor(0, driveLeft);
         }
-        else if (singal == 999){
+        else if (signal == 999){
             driveLeft = -127;
             driveRight = -127;
             set_motor(1, backSpeed);
