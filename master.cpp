@@ -101,7 +101,7 @@ void getScale(int error, int previousError){
   //while(abs(error) > 255){
   //error = (error / 255) * 100;
  //} 
-  double kp = 0.0000002;
+  float kp = 0.0000002;
   double proportionalSignal = error*kp;
 
   printf("Proportional Signal: %d \n", proportionalSignal); 
