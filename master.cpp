@@ -102,9 +102,9 @@ void getScale(int error, int previousError){
   //error = (error / 255) * 100;
  //} 
   float kp = 0.0000002;
-  double proportionalSignal = error*kp;
+  double proportionalSignal = error;
 
-  printf("Proportional Signal: %d \n", proportionalSignal); 
+  printf("Error: %d \n", proportionalSignal); 
   //Derivative
   //double kd = 0.5;
   //double derivativeSignal = (error - previousError)*kd;
