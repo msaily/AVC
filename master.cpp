@@ -98,10 +98,10 @@ return error;
 void getScale(int error, int previousError){
   //Proportional
   double scale = 0; 
-  while(abs(error) > 255){
-  error = (error / 255) * 100;
- } 
-  double kp = 0.2;
+  //while(abs(error) > 255){
+  //error = (error / 255) * 100;
+ //} 
+  double kp = 0.0000002;
   double proportionalSignal = error*kp;
 
   printf("Proportional Signal: %d \n", proportionalSignal); 
@@ -117,8 +117,8 @@ void getScale(int error, int previousError){
 
 //Working
 void move(int error, int scale){
-  int speedLeft = 85;
-  int speedRight = 85;
+  int speedLeft = 120;
+  int speedRight = 120;
   if(scale < 0) scale*= -1;
   if(scale > 254) scale = 254;
   
@@ -132,8 +132,8 @@ void move(int error, int scale){
   
    if(error == 0){
     //printf("GOING FORWARDS");
-    speedLeft = 85; // Speed positive - is going forward  
-    speedRight = 85;
+    speedLeft =120; // Speed positive - is going forward  
+    speedRight = 120;
   }else if(error < 0){ // Error value is negative when the line is to the left (when robot goes to the right hand side of the line) 
     //printf("GOING LEFT");
     speedLeft-=scale;
