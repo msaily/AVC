@@ -9,3 +9,16 @@ int openGate() {
   sleep1(0, 2000); //Check if you need this or not 
   return 0; 
 }
+
+
+
+
+
+ connect_to_server("130.195.006.196", 1024); 
+  char* p = new char[24];
+  //char s[24] = {'P', 'l', 'e', 'a', 's', 'e'}; 
+  send_to_server("Please");  
+  receive_from_server(p); 
+  send_to_server(p); 
+  //sleep1(0, 2000); //Check if you need this or not 
+  return 0; 
