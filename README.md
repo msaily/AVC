@@ -2,7 +2,7 @@
 
 # Progress Reporting
 ## Week 1
-### Checklist:
+ Checklist:
  - [x] Meet up and Discuss roles
  - [ ] Group up in the lab and start with the initial method
  - [ ] Draft ideas for the chassis  
