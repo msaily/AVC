@@ -20,18 +20,18 @@
  acheive but it will be caught up in later weeks.
  
 ## Week 3
- - [ ] begin initial testing and debugging of code
- - [ ] develope a final model for the chassis of the robot
- 
  
 ## Week 4
  
 ## Week 5
- - [ ] 
- - [ ]
+ - [ ] testing with the final chassis base
+ - [ ] debug code to work well with the final chassis
+ 
+ review:
+ this week we begun testing heavily and working to get the robot to get through the second quadrant
 ## Week 6
- - [ ] finalise the chassis ready for assessment 
- - [ ] have a secure code to complete the first 2 quadrants consistantly
+ - [x] finalise the chassis ready for assessment 
+ - [x] have a secure code to complete the first 2 quadrants consistantly
  
  review:
  within this week a lot of hours were spent in the labs refining and testing code and finalising the chassis 
