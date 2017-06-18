@@ -12,8 +12,8 @@
  acheive the rest of the AVC.
  
 ## Week 2
- - [ ] work on building drafted ideas for chassis
- - [ ] produce base of the code to be tested when prototype chassis is built
+ - [x] work on building drafted ideas for chassis
+ - [x] produce base of the code to be tested when prototype chassis is built
  
  review:
  because of the debates of the Lego chassis and the 3D printed chassis we are set back on what we wanted to 
@@ -24,8 +24,8 @@
 ## Week 4
  
 ## Week 5
- - [ ] testing with the final chassis base
- - [ ] debug code to work well with the final chassis
+ - [x] testing with the final chassis base
+ - [x] debug code to work well with the final chassis
  
  review:
  this week we begun testing heavily and working to get the robot to get through the second quadrant
